@@ -1,8 +1,8 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from primerapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('primera/',views.inicio),
-    path('ahora/',views.ahora)
+    path('primerapp/',include("primerapp.urls")),
+    path('segundapp/',include("segundapp.urls"))
 ]
