@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from primerapp import views
+from . import views
 urlpatterns = [
-    path('primera/',views.inicio),
+    path('',views.inicio),
     path('ahora/',views.ahora),
     path('inacap/',views.inacap)
 ]

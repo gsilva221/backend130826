@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from segundapp import views
+from . import views
 urlpatterns = [
-    path('primera/',views.inicio),
-    path('hola/',views.saludo)
+    path('',views.inicio),
+    path('hola/',views.saludo),
+    path('video/',views.video)
 ]
